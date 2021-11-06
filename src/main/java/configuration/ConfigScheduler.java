@@ -30,6 +30,6 @@ public class ConfigScheduler {
 
     @AfterSuite
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
 }
