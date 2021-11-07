@@ -26,6 +26,9 @@ public class BaseScreen {
     public void shouldHave(MobileElement element, String text, long timeout) {
         new WebDriverWait(driver, timeout).until(ExpectedConditions.textToBePresentInElement(element, text));
     }
+    private void should(MobileElement element, long timeout) {
+        new WebDriverWait(driver,timeout).until(ExpectedConditions.visibilityOf(element));
+    }
 
     public void hideKeyBoard() {
         driver.hideKeyboard();

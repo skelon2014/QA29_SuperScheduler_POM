@@ -17,7 +17,7 @@ public class LoginScreen extends BaseScreen {
 
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']")
     MobileElement emailEditText;
-    @FindBy (xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']")
+    @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']")
     MobileElement passwordEditText;
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/login_btn']")
     MobileElement loginButton;
@@ -26,9 +26,9 @@ public class LoginScreen extends BaseScreen {
     MobileElement errorMessage;
 
     public LoginScreen fillEmail(String email) {
-        new WebDriverWait(driver,20)
+        new WebDriverWait(driver, 20)
                 .until(ExpectedConditions.visibilityOf(emailEditText));
-        type (emailEditText,email);
+        type(emailEditText, email);
         return this;
     }
 
@@ -44,10 +44,10 @@ public class LoginScreen extends BaseScreen {
     }
 
     public WizardScreen loginWithCredentials(Credentials user) {
-        new WebDriverWait(driver,20)
+        new WebDriverWait(driver, 20)
                 .until(ExpectedConditions.visibilityOf(emailEditText));
-        type(emailEditText,user.getEmail());
-        type(passwordEditText,user.getPassword());
+        type(emailEditText, user.getEmail());
+        type(passwordEditText, user.getPassword());
         hideKeyBoard();
         loginButton.click();
         return new WizardScreen(driver);
@@ -57,4 +57,25 @@ public class LoginScreen extends BaseScreen {
     public boolean isLoginButtonPresent() {
         return loginButton.isDisplayed();
     }
+
+    public LoginScreen fillForm(Credentials user) {
+        new WebDriverWait(driver, 20)
+                .until(ExpectedConditions.visibilityOf(emailEditText));
+        type(emailEditText, user.getEmail());
+        type(passwordEditText, user.getPassword());
+        return this;
+    }
+
+    public LoginScreen errorLogin() {
+        hideKeyBoard();
+        loginButton.click();
+        return this;
+    }
+
+    public String errorMessage() {
+        //should(errorMessage,10);
+        return errorMessage.getText();
+    }
+
+
 }
