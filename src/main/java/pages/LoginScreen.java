@@ -1,5 +1,6 @@
 package pages;
 
+import dto.Credentials;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -21,9 +22,8 @@ public class LoginScreen extends BaseScreen {
     @FindBy(xpath = "//*[@resource-id='com.example.svetlana.scheduler:id/login_btn']")
     MobileElement loginButton;
 
-
     @AndroidFindBy(xpath = "//*[@resource-id='android:id/message']")
-    MobileElement errorMes;
+    MobileElement errorMessage;
 
     public LoginScreen fillEmail(String email) {
         new WebDriverWait(driver,20)
@@ -37,10 +37,24 @@ public class LoginScreen extends BaseScreen {
         return this;
     }
 
-
     public WizardScreen clickOnLogin() {
         hideKeyBoard();
         loginButton.click();
         return new WizardScreen(driver);
+    }
+
+    public WizardScreen loginWithCredentials(Credentials user) {
+        new WebDriverWait(driver,20)
+                .until(ExpectedConditions.visibilityOf(emailEditText));
+        type(emailEditText,user.getEmail());
+        type(passwordEditText,user.getPassword());
+        hideKeyBoard();
+        loginButton.click();
+        return new WizardScreen(driver);
+
+    }
+
+    public boolean isLoginButtonPresent() {
+        return loginButton.isDisplayed();
     }
 }

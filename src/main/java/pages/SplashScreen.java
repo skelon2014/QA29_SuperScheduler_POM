@@ -14,7 +14,6 @@ public class SplashScreen extends BaseScreen {
     @FindBy(how = How.XPATH, using = "//*[@resource-id='com.example.svetlana.scheduler:id/app_version_res']")
     MobileElement versionTextVew;
 
-
     public String getCurrentVersion() {
         return versionTextVew.getText();
     }
