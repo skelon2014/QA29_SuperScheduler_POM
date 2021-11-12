@@ -1,0 +1,75 @@
+09:35:00 INFO  - Start superScheduler
+09:35:01 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:02 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:02 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:02 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:03 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:04 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:04 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:05 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_email_input']
+09:35:06 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+09:35:06 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+09:35:07 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+09:35:08 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+09:35:08 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+09:35:09 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/log_password_input']
+09:35:11 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+09:35:11 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/login_btn']
+09:35:11 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/wizard_settings_skip']
+09:35:32 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/wizard_settings_skip']
+09:35:32 INFO  - org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-V8HD5F2', ip: '192.168.1.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+Driver info: io.appium.java_client.AppiumDriver
+Capabilities {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, databaseEnabled: false, desired: {appActivity: .presentation.splashScreen...., appPackage: com.example.svetlana.scheduler, automationName: Appium, deviceName: Nex5, platformName: android, platformVersion: 8.0}, deviceApiLevel: 26, deviceManufacturer: Google, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 8.0.0, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 5c256cd1-752b-49ca-b84a-358766564256
+*** Element info: {Using=xpath, value=//*[@resource-id='com.example.svetlana.scheduler:id/wizard_settings_skip']}
+09:35:34 INFO  - Screenshot with error in -->src\test\screenshots\screen-454639.png
+09:35:34 INFO  - Start find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:35:34 INFO  - Find find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:35:34 INFO  - Start find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:35:35 INFO  - Find find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:35:35 INFO  - Start methodeventCreationTest
+09:35:35 INFO  - [LTN]: Start succes of test eventCreationTest
+09:35:35 INFO  - Start find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:35:36 INFO  - Find find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:35:36 INFO  - Start find element-->By.chained({By.xpath: //*[@resource-id ='com.example.svetlana.scheduler:id/fab_add_event']})
+09:35:37 INFO  - Find find element-->By.chained({By.xpath: //*[@resource-id ='com.example.svetlana.scheduler:id/fab_add_event']})
+09:35:37 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:40 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:40 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:40 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:41 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:42 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:42 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:43 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_title_input']
+09:35:44 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_type_input']
+09:35:45 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_type_input']
+09:35:45 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_type_input']
+09:35:46 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_type_input']
+09:35:46 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_type_input']
+09:35:47 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_type_input']
+09:35:49 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_break_plus_btn']
+09:35:49 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_break_plus_btn']
+09:35:49 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_break_plus_btn']
+09:35:50 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_break_plus_btn']
+09:35:50 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_break_plus_btn']
+09:35:51 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_break_plus_btn']
+09:35:51 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_edit']
+09:35:52 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_edit']
+09:35:52 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_input']
+09:35:53 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_input']
+09:35:53 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_input']
+09:35:54 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_input']
+09:35:55 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_input']
+09:35:55 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_input']
+09:35:55 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_save']
+09:35:56 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_wage_save']
+09:35:56 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_save_btn']
+09:35:58 INFO  - Find find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/info_save_btn']
+09:35:58 INFO  - Start find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:36:00 INFO  - Find find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:36:01 INFO  - Start find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:36:01 INFO  - Find find element-->By.chained({By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/fab_main']})
+09:36:01 INFO  - Stop methodeventCreationTest

@@ -1,11 +1,10 @@
-package configuration;
+package advancedconfig;
 
+import configuration.ConfigScheduler;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.events.EventFiringWebDriverFactory;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.annotations.AfterMethod;
@@ -18,11 +17,10 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
-public class ConfigScheduler {
-
+public class AdvancedConfig {
     protected AppiumDriver<MobileElement> driver;
 
-    Logger logger = LoggerFactory.getLogger(ConfigScheduler.class);
+    Logger logger = LoggerFactory.getLogger(AdvancedConfig.class);
 
     @BeforeSuite
     public void setUP() throws MalformedURLException {
@@ -31,15 +29,15 @@ public class ConfigScheduler {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability("deviceName", "Nex5");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "8.0");
-        capabilities.setCapability("appPackage", "com.example.svetlana.scheduler");
-        capabilities.setCapability("appActivity", ".presentation.splashScreen.SplashScreenActivity");
+        capabilities.setCapability("appPackage", "com.h6ah4i.android.example.advrecyclerview");
+        capabilities.setCapability("appActivity", ".launcher.MainActivity");
         capabilities.setCapability("automationName","Appium");
 
         driver = new AppiumDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-        driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver,new AppiumListener());
+        // driver = EventFiringWebDriverFactory.getEventFiringWebDriver(driver,new AppiumListener());
 
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        logger.info("Start superScheduler");
+        logger.info("Start advanced");
 
     }
 

@@ -1,9 +1,11 @@
 package scheduler;
 
 import configuration.ConfigScheduler;
+import configuration.DataProviderMy;
 import dto.Credentials;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.LoginScreen;
 import pages.SplashScreen;
 
 public class LoginTest extends ConfigScheduler {
@@ -56,6 +58,24 @@ public class LoginTest extends ConfigScheduler {
         System.out.println(isLoginPresent);
     }
 
+    @Test(dataProvider = "loginData", dataProviderClass = DataProviderMy.class)
+    public void loginLogoutTestWithCredentialsDTO(String email, String password) {
+
+        Credentials user = Credentials.builder()
+                .email(email)
+                .password(password).build();
+
+        boolean isLoginPresent = new SplashScreen(driver)
+                .checkVersion("0.0.3")
+                .loginWithCredentials(user)
+                .skipWizard()
+                .openMenu()
+                .logout()
+                .isLoginButtonPresent();
+        Assert.assertTrue(isLoginPresent);
+        System.out.println(isLoginPresent);
+    }
+
     @Test
     public void loginNegativeTest() {
         Credentials user = Credentials.builder()
@@ -69,4 +89,5 @@ public class LoginTest extends ConfigScheduler {
                 .errorMessage();
         Assert.assertEquals(errorMessage, "Wrong email or password");
     }
+
 }

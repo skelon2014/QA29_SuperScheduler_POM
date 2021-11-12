@@ -5,7 +5,6 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -73,7 +72,7 @@ public class LoginScreen extends BaseScreen {
     }
 
     public String errorMessage() {
-        //should(errorMessage,10);
+        should(errorMessage, 10);
         return errorMessage.getText();
     }
 

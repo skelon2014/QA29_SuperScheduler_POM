@@ -20,7 +20,8 @@ public class SplashScreen extends BaseScreen {
 
     //return object of class(page)
     public LoginScreen checkVersion(String version) {
-        shouldHave(versionTextVew, version, 20);
+        shouldHave(versionTextVew, version, 10);
         return new LoginScreen(driver);
+
     }
 }
