@@ -1,12 +1,9 @@
-package pages;
+package pagesScheduler;
 
-import configuration.ConfigScheduler;
 import dto.Event;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class EditCreateEventScreen extends HomeScreen {
 

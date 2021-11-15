@@ -1,10 +1,9 @@
-package configuration;
+package schedulerConf;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
-import org.testng.ITestNGListener;
 import org.testng.ITestResult;
 
 public class ListenTestNG implements ITestListener {
@@ -13,17 +12,21 @@ public class ListenTestNG implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         ITestListener.super.onTestStart(result);
-        logger.info("[LTN]: Start succes of test " + result.getName());
+        logger.info("[LSTN]: Start succes of test " + result.getName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
+
         ITestListener.super.onTestSuccess(result);
+        logger.info("[LSTN] : Start test success --> " + result.getName());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
+
         ITestListener.super.onTestFailure(result);
+        logger.info("[LSTN] : On failure test --> " + result.getName());
     }
 
     @Override
@@ -34,6 +37,7 @@ public class ListenTestNG implements ITestListener {
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
         ITestListener.super.onTestFailedButWithinSuccessPercentage(result);
+        //screenshots
 
     }
 

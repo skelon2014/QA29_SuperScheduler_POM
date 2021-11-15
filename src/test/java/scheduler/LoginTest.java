@@ -1,12 +1,11 @@
 package scheduler;
 
-import configuration.ConfigScheduler;
-import configuration.DataProviderMy;
+import schedulerConf.ConfigScheduler;
+import schedulerConf.DataProviderMy;
 import dto.Credentials;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.LoginScreen;
-import pages.SplashScreen;
+import pagesScheduler.SplashScreen;
 
 public class LoginTest extends ConfigScheduler {
 

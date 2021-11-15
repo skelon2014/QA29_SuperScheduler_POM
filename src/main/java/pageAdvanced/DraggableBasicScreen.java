@@ -22,7 +22,7 @@ public class DraggableBasicScreen extends BaseScreenADV{
         Dimension window = driver.manage().window().getSize();
         System.out.println("Size of window - " + window.getWidth() +" --- " + window.getHeight());
         Rectangle rect = element.getRect();
-        System.out.println(rect);
+        System.out.println("Size of element: widht --> " + rect.getWidth() + ", height --> " + rect.getHeight());
       //  rect.getX();
       //  rect.getY();
       //  rect.getHeight();
@@ -45,13 +45,15 @@ public class DraggableBasicScreen extends BaseScreenADV{
 
     public DraggableBasicScreen dragDownCount(int count){
 
-        MobileElement element = list.get(0);
+        MobileElement element = list.get(1);
         Dimension window = driver.manage().window().getSize();
         System.out.println("Size of window - " + window.getWidth() +" --- " + window.getHeight());
         Rectangle rect = element.getRect();
+        System.out.println("Size of element: widht --> " + rect.getWidth() + ", height --> " + rect.getHeight());
 
         int xFrom = rect.getX() + rect.getWidth()/2;
         int yFrom = rect.getY() + rect.getHeight()/2;
+        System.out.println("X= "+ (xFrom-rect.getWidth()/2) + ",Y= " + (yFrom - rect.getHeight()/2));
 
         int xTo = xFrom;
         int yTo = yFrom + rect.getHeight() * count;
@@ -66,16 +68,17 @@ public class DraggableBasicScreen extends BaseScreenADV{
     }
 
     public DraggableBasicScreen dragDownWindow() {
-        MobileElement element = list.get(0);
+        MobileElement element = list.get(1);
         Dimension window = driver.manage().window().getSize();
         System.out.println("Size of window - " + window.getWidth() +" --- " + window.getHeight());
         Rectangle rect = element.getRect();
+        System.out.println("Size of element: widht --> " + rect.getWidth() + ", height --> " + rect.getHeight());
 
         int xFrom = rect.getX() + rect.getWidth()/2;
         int yFrom = rect.getY() + rect.getHeight()/2;
 
         int xTo = xFrom;
-        int yTo =  window.getHeight() - rect.getY()/2;
+        int yTo =  window.getHeight() - rect.getY()/3;
 
         TouchAction <?> touchAction = new TouchAction<>(driver);
         touchAction.longPress(PointOption.point(xFrom,yFrom))

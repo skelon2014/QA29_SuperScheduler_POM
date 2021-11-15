@@ -1,4 +1,4 @@
-package pages;
+package pagesScheduler;
 
 import dto.Credentials;
 import io.appium.java_client.AppiumDriver;

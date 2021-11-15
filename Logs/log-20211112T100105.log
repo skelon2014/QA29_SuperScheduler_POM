@@ -1,3 +1,0 @@
-10:01:23 INFO  - Start superScheduler
-10:01:24 INFO  - Start methodloginLogoutTestWithCredentialsDTO
-10:01:24 INFO  - Start find element-->By.xpath: //*[@resource-id='com.example.svetlana.scheduler:id/app_version_res']

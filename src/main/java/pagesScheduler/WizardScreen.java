@@ -1,4 +1,4 @@
-package pages;
+package pagesScheduler;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;

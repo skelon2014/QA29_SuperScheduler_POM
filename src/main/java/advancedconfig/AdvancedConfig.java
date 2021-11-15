@@ -1,6 +1,5 @@
 package advancedconfig;
 
-import configuration.ConfigScheduler;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.remote.MobileCapabilityType;
@@ -43,7 +42,7 @@ public class AdvancedConfig {
 
     @AfterSuite
     public void tearDown() {
-        driver.quit();
+        //driver.quit();
     }
     @BeforeMethod
     public void startLogger(Method m){

@@ -1,4 +1,4 @@
-package configuration;
+package schedulerConf;
 
 import com.google.common.io.Files;
 import io.appium.java_client.events.api.general.AppiumWebDriverEventListener;
@@ -84,12 +84,14 @@ public class AppiumListener implements AppiumWebDriverEventListener {
 
     @Override
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-        logger.info("Start find element-->" + by);
+        logger.info("Start find element --> " + by);
     }
+
 
     @Override
     public void afterFindBy(By by, WebElement element, WebDriver driver) {
-        logger.info("Find find element-->" + by);
+
+        logger.info("Element --> " + by + " was found");
     }
 
     @Override
@@ -134,9 +136,9 @@ public class AppiumListener implements AppiumWebDriverEventListener {
 
     @Override
     public void onException(Throwable throwable, WebDriver driver) {
-        logger.info(throwable.toString());
+        logger.info(throwable.fillInStackTrace().getMessage());
 
-        String pathToFile = "src/test/screenshots/screen-" + System.currentTimeMillis()/3600000 + ".png";
+        String pathToFile = "src/test/screenshots/screen-" + System.currentTimeMillis() / 3600000 + ".png";
         File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         File screenshot = new File(pathToFile);
         try {
@@ -144,7 +146,7 @@ public class AppiumListener implements AppiumWebDriverEventListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        logger.info("Screenshot with error in -->" + screenshot);
+        logger.info("Screenshot with error in --> " + screenshot);
     }
 
     @Override

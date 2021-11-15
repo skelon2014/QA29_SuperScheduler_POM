@@ -1,9 +1,9 @@
 package scheduler;
 
-import configuration.ConfigScheduler;
+import schedulerConf.ConfigScheduler;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SplashScreen;
+import pagesScheduler.SplashScreen;
 
 public class LaunchAppTest extends ConfigScheduler {
 

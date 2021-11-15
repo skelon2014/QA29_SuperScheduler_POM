@@ -1,4 +1,4 @@
-package pages;
+package pagesScheduler;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -19,9 +19,8 @@ public class SplashScreen extends BaseScreen {
     }
 
     //return object of class(page)
-    public LoginScreen checkVersion(String version) {
-        shouldHave(versionTextVew, version, 10);
+    public LoginScreen checkVersion(String version)  {
+        shouldHave(versionTextVew, version, 20);
         return new LoginScreen(driver);
-
     }
 }

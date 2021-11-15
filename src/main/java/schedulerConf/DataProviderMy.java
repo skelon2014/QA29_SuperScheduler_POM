@@ -1,4 +1,4 @@
-package configuration;
+package schedulerConf;
 
 import org.testng.annotations.DataProvider;
 
